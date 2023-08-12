@@ -1,0 +1,137 @@
+body {
+  background-image: url("/images/stock-photo-empty-wooden-table-top-with-lights-bokeh-on-blur-restaurant-background-1934380406-transformed.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90vw;
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 2%;
+  margin-top: 2%;
+}
+
+.clock {
+  width: 40%;
+  height: 70%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.main {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.setAlarm {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 25px;
+  background-color: rgba(110, 241, 245, 0.445);
+  border-radius: 50px 5px 5px 50px;
+}
+
+.setTime {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.timeInput {
+  height: 80%;
+  width: 20%;
+  font-size: 2rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.918);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.timeInput:focus {
+  outline: none;
+}
+
+#setMeridiem {
+  font-size: 1.1rem;
+}
+
+#btnAlarm {
+  width: 25%;
+  background-color: gray;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  border: none;
+  padding: 3px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+.alarmListDIV {
+  width: 20%;
+  height: auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  /* align-items: start; */
+}
+li {
+  /* background-color: rgba(108, 108, 109, 0.692); */
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
+.clockBg {
+  width: 20%;
+  height: 70%;
+  margin: 2px;
+  font-size: 9vmin;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: none;
+  border-radius: 7px;
+}
+
+#meridiem {
+  width: 7%;
+  height: 20%;
+  margin-top: 14%;
+  margin-left: 2%;
+  font-size: 3vmin;
+}
+.devider {
+  font-size: 5rem;
+  color: white;
+}
+
+.size3rem {
+  font-size: 3rem;
+}
+
+#alarmList div {
+  background-color: rgba(128, 128, 128, 0.651);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="clock">
+            <div class="main">
+
+                <div class="clockBg" id="hour">00</div>
+                <span class="devider">:</span>
+                <div class="clockBg" id="minute">00</div>
+                <span class="devider">:</span>
+                <div class="clockBg" id="second">00</div>
+                <div class="clockBg" id="meridiem">--</div>
+            </div>
+            <div class="setAlarm">
+                <div class="setTime">
+                    <input type="tel" id="setHour" class="timeInput" placeholder="00" maxlength="2">
+                    <span class="size3rem devider">:</span>
+                    <input type="tel" id="setMinute" class="timeInput" placeholder="00" maxlength="2">
+                    <span class="size3rem devider">:</span>
+                    <input type="tel" id="setSecond" class="timeInput" placeholder="00" maxlength="2">
+                    <select id="setMeridiem" name="meridiem" class="timeInput">
+                        <option value="--">--</option>
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                </div>
+                <button type="submit" id="btnAlarm">Set Alarm</button>
+            </div>
+        </div>
+        <div class="alarmListDIV">
+            <h2><u>Alarms</u></h2>
+
+            <ul id="alarmList">
+
+            </ul>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
