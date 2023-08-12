@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+    // calculating the real time
     var date = new Date()
     var Mhour = date.getHours();
     var Mminute = date.getMinutes();
@@ -8,31 +9,36 @@ document.addEventListener("DOMContentLoaded", () => {
     var meridian = timestamp.slice(-2);
     var alarmArr = []
 
-    // input fields
+    // main clock fields
     var hourInput = document.getElementById("hour")
     var minuteInput = document.getElementById("minute")
     var secondInput = document.getElementById("second")
     var meridiemInput = document.getElementById("meridiem")
 
-
+   // alarm set fields 
     var setHour = document.getElementById("setHour")
     var setMinute = document.getElementById("setMinute")
     var setSecond = document.getElementById("setSecond")
     var setMeridiem = document.getElementById("setMeridiem");
-
     var setBtn = document.getElementById("btnAlarm")
 
     var alarmList = document.getElementById("alarmList")
 
+    // setting the main clock primarily
     hourInput.innerText = Mhour;
     minuteInput.innerText = Mminute;
     secondInput.innerText = Msecond;
     meridiemInput.innerText = meridian
 
 
+    // alarm alert function
+
     function alertFun() {
         alert(`alarm for ${Mhour}:${Mminute}:${Msecond}`)
     }
+
+
+    // form main clock 
 
     var interval = setInterval(() => {
 
@@ -67,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 1000)
 
 
-
+// setting the alarms
 
     setBtn.addEventListener("click", () => {
 
@@ -96,6 +102,8 @@ use 12 hour format only.`)
     })
 
 
+
+    // rendering the alarm List
 
     var renderList = () => {
 

@@ -28,6 +28,8 @@ body {
   justify-content: space-between;
 }
 
+/* main clock */
+
 .main {
   width: 100%;
   height: 30%;
@@ -35,6 +37,8 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+/* set alarm fields */
 
 .setAlarm {
   width: 100%;
@@ -52,6 +56,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
 }
+
 .timeInput {
   height: 80%;
   width: 20%;
@@ -84,16 +89,17 @@ body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
 }
 
+/* alarm list */
+
 .alarmListDIV {
   width: 20%;
   height: auto;
   color: white;
   display: flex;
   flex-direction: column;
-  /* align-items: start; */
 }
+
 li {
-  /* background-color: rgba(108, 108, 109, 0.692); */
   margin-bottom: 5px;
   font-size: 1.2rem;
   padding: 5px;
